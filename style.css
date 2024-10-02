@@ -316,7 +316,7 @@ header.sticky .header {
 
 @media screen and (max-width: 800px) {
   .header {
-    height: 60px;
+    height: 75px;
   }
 
   .header-content {
@@ -363,15 +363,15 @@ header.sticky .logo a {
   }
 
   .logo a {
-    margin: 23px 0 0;
+    margin: 5px 0 0;
     width: 90px;
-    height: 13px;
+    height: 70px;
   }
 
   header.sticky .logo a {
-    margin: 23px 0 0;
+    margin: 10px 0 0;
     width: 90px;
-    height: 16px;
+    height: 70px;
   }
 }
 
@@ -456,11 +456,11 @@ header.sticky a.phone-nav {
 
 @media screen and (max-width: 800px) {
   a.phone-nav {
-    margin: 12px 10px 0 0;
+    margin: 15px 10px 0 0;
   }
 
   header.sticky a.phone-nav {
-    margin: 12px 10px 0 0;
+    margin: 22px 10px 0 0;
   }
 }
 
@@ -567,6 +567,7 @@ header.sticky a.phone-nav {
 
   .hero-content div {
     text-align: center;
+
   }
 
   .hero-content div h2 {
@@ -1031,7 +1032,7 @@ header.sticky a.phone-nav {
 
 @media screen and (max-width: 800px) {
   .space {
-    padding: 100px 0;
+    padding: 1px 0;
   }
 
   .space-content h2 {
