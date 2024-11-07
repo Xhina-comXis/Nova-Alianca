@@ -6,55 +6,10 @@
     <link rel="shortcut icon" href="Logo.ico">
     <link rel="stylesheet" href="style.css">
     <title>Nova Aliança Transportes</title>
-    <script type="text/javascript">
-      ! function(e, a, t) {
-        var n, r, o, i = a.createElement("canvas"),
-          p = i.getContext && i.getContext("2d");
-
-        function s(e, t) {
-          var a = String.fromCharCode;
-          p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
-          e = i.toDataURL();
-          return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
-        }
-
-        function c(e) {
-          var t = a.createElement("script");
-          t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
-        }
-        for (o = Array("flag", "emoji"), t.supports = {
-            everything: !0,
-            everythingExceptFlag: !0
-          }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
-          if (!p || !p.fillText) return !1;
-          switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
-            case "flag":
-              return s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) ? !1 : !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
-            case "emoji":
-              return !s([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039])
-          }
-          return !1
-        }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-        t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
-          t.DOMReady = !0
-        }, t.supports.everything || (n = function() {
-          t.readyCallback()
-        }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
-          "complete" === a.readyState && t.readyCallback()
-        })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
-      }(window, document, window._wpemojiSettings);
-    </script>
-    <script src="js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
-    <meta name="generator" content="WordPress 4.9.26">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107345930-1"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments)
-      };
-      gtag('js', new Date());
-      gtag('config', 'UA-107345930-1');
+      emailjs.init("UOf9rOEydetMaUjdA");
     </script>
   </head>
   <body class="home blog">
@@ -62,9 +17,8 @@
     <header>
       <div class="top">
         <div class="top-content">
-          <a href="#turismo">Turismo</a>
+          <a href="#frota">Fretamento</a>
           <a href="#escolar">Escolar</a>
-          <a href="#particular">Particular</a>
           <a href="tel:+551123124693">(11) 2312-4693</a>
           <a href="tel:+5511971486400">(11) 97148-6400</a>
           <div class="clr"></div>
@@ -130,7 +84,7 @@
       </div>
     </div>
 
-    <a id="turismo" class="anchor"></a>
+    <a id="frota" class="anchor"></a>
     <section id="frota" class="cd-section">
       <div class="">
         <div class="frota">
@@ -147,15 +101,12 @@
             <div class="frota-images-content">
               <div class="middle">
                 <div class="grid-gallery">
-                  <a data-dialog13="13">
+
                     <img src="images/Executiva-aberta.jpg" alt="" width="260px" height="260px">
-                  </a>
-                  <a data-dialog14="14">
+
                     <img src="images/Executiva-frente.jpg" alt="" width="260px" height="260px">
-                  </a>
-                  <a data-dialog15="15">
+
                     <img src="images/Executiva-tras.jpg" alt="" width="260px" height="260px">
-                  </a>
                 </div>
                 <hr>
               </div>
@@ -177,15 +128,12 @@
           <div class="frota-images-content">
             <div class="middle">
               <div class="grid-gallery">
-                <a data-dialog7="07">
+
                   <img src="images/escolar-bus.jpg" alt="">
-                </a>
-                <a data-dialog8="08">
+
                   <img src="images/escolar-lateral.jpg" alt="">
-                </a>
-                <a data-dialog9="09">
+
                   <img src="images/escolares.jpg" alt="">
-                </a>
               </div>
               <hr>
             </div>
@@ -193,7 +141,7 @@
         </div>
       </div>
     </section>
-    <a id="particular" class="anchor"></a>
+    <a id="frota" class="anchor"></a>
     <section id="frota" class="cd-section">
       <div class="">
         <div class="frota">
@@ -211,15 +159,12 @@
             <div class="frota-images-content">
               <div class="middle">
                 <div class="grid-gallery">
-                  <a data-dialog13="13">
+
                     <img src="images/Executiva-aberta.jpg" alt="" width="260px" height="260px">
-                  </a>
-                  <a data-dialog14="14">
+
                     <img src="images/Executiva-frente.jpg" alt="" width="260px" height="260px">
-                  </a>
-                  <a data-dialog15="15">
+
                     <img src="images/Executiva-tras.jpg" alt="" width="260px" height="260px">
-                  </a>
                 </div>
                 <hr>
               </div>
@@ -235,12 +180,12 @@
           <div>
             <h2>Solicite um Orçamento</h2>
             <p>Preencha o formulário abaixo para fazer um orçamento:</p>
-            <form id="contatoform" name="dados" method="post" action="form.php">
-              <input type="text" name="nome" id="nome" placeholder="Nome" required="">
-              <input type="email" name="email" id="email" placeholder="E-mail" required="">
-              <input type="text" name="telefone" id="telefone" placeholder="Telefone para Contato" required="">
-              <select name="uso" required="required">
-                <option value="" disabled="" selected="">Tipo de Serviço</option>
+            <form id="contatoform" name="dados" method="post">
+              <input type="text" name="nome" id="nome" placeholder="Nome" required>
+              <input type="email" name="email" id="email" placeholder="E-mail" required>
+              <input type="text" name="telefone" id="telefone" placeholder="Telefone para Contato" required>
+              <select name="uso" id="uso" required>
+                <option value="" disabled selected>Tipo de Serviço</option>
                 <option value="Fretamento de Funcionários">Fretamento de Funcionários</option>
                 <option value="Transporte Escolar">Transporte Escolar</option>
                 <option value="Transporte Executivo">Transporte Executivo</option>
@@ -260,195 +205,39 @@
     <div class="footer">
       <div class="footer-content">
         <h2>Nova Aliança Transportes</h2>
-        <p>Rua São Benedito, 53 <br> Taiaçupeba, Mogi das Cruzes - SP <br> CEP 08765-080</p>
-        <p>novaaliancamogi@gmail.com <br> 13.273.116/0001-46 </p>
+        <p>Rua São Benedito, 53 <br> Taiaçupeba, Mogi das Cruzes - SP <br> CEP 08765-080 <br> 13.273.116/0001-46 </p>
+        <p>novaaliancamogi@gmail.com</p>
         <p>(11) 2312-4693 | (11) 97148-6400</p>
         </a>
-        <div class="clr"></div>
       </div>
     </div>
-    <script type="text/javascript" src="js/wp-embed.min.js"></script>
-    <div id="01" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-van_01_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="02" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-van_02_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="03" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-van_03_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="04" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-micro-onibus_01_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="05" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-micro-onibus_02_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="06" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-micro-onibus_03_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="07" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-escolar_01_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="08" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-escolar_02_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="09" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-escolar_03_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="10" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-escolar-especial_01_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="11" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-escolar-especial_02_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="12" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-escolar-especial_03_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="13" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-onibus_01.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="14" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-onibus_02_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div id="15" class="dialog">
-      <div class="dialog__overlay"></div>
-      <div class="dialog__content">
-        <img src="images/transporte-executivo-onibus_03_1.jpg" alt="Transoto - Transportes">
-        <div>
-          <a data-dialog-close="">
-            <img src="images/close1_icon.svg" alt="Transoto - Transportes">
-          </a>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
-    <script type="text/javascript" src="js/classie.js"></script>
-    <script type="text/javascript" src="js/dialogFx.js"></script>
-    <script type="text/javascript" src="js/jquery.vide.js"></script>
-    <script type="text/javascript" src="js/jquery.anchor.js"></script>
-    <script type="text/javascript" src="js/jquery.menu.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/jquery.section.js"></script>
-    <script type="text/javascript" src="js/jquery.loader.js"></script>
-    <script type="text/javascript" src="js/youtube.jquery.js"></script>
-    <script type="text/javascript">
-      jQuery(function() {
-        jQuery("a.modal-video").YouTubePopUp();
+<script>
+  document.getElementById('contatoform').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const uso = document.getElementById('uso').value;
+
+    const templateParams = {
+      nome: nome,
+      email: email,
+      telefone: telefone,
+      uso: uso
+    };
+
+    emailjs.send('service_npn5ctq', 'template_qu9ycra', templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Suas informações foram enviadas e em breve faremos contato!');
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Um erro ocorreu, tente novamente mais tarde.');
       });
-    </script>
+
+    this.reset();
+  });
+</script>
   </body>
 </html>
