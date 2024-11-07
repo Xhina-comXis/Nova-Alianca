@@ -17,8 +17,9 @@
     <header>
       <div class="top">
         <div class="top-content">
-          <a href="#frota">Fretamento</a>
+          <a href="#frota">Turismo</a>
           <a href="#escolar">Escolar</a>
+          <a href="#particular">Particular</a>
           <a href="tel:+551123124693">(11) 2312-4693</a>
           <a href="tel:+5511971486400">(11) 97148-6400</a>
           <div class="clr"></div>
@@ -34,9 +35,6 @@
             <ul class="clearfix">
               <li>
                 <a href="#topo">Início</a>
-              </li>
-              <li>
-                <a href="#sobre">Sobre a Empresa</a>
               </li>
               <li>
                 <a href="#frota">Frota</a>
@@ -101,13 +99,16 @@
             <div class="frota-images-content">
               <div class="middle">
                 <div class="grid-gallery">
-
-                    <img src="images/Executiva-aberta.jpg" alt="" width="260px" height="260px">
-
-                    <img src="images/Executiva-frente.jpg" alt="" width="260px" height="260px">
-
-                    <img src="images/Executiva-tras.jpg" alt="" width="260px" height="260px">
-                </div>
+                  <button onclick="openModal(0)">
+                      <img src="images/Executiva-aberta.jpg" alt="Executiva Aberta" width="260px" height="260px">
+                  </button>
+                  <button onclick="openModal(1)">
+                      <img src="images/Executiva-frente.jpg" alt="Executiva Frente" width="260px" height="260px">
+                  </button>
+                  <button onclick="openModal(2)">
+                      <img src="images/Executiva-tras.jpg" alt="Executiva Trás" width="260px" height="260px">
+                  </button>
+              </div>
                 <hr>
               </div>
             </div>
@@ -128,20 +129,23 @@
           <div class="frota-images-content">
             <div class="middle">
               <div class="grid-gallery">
-
-                  <img src="images/escolar-bus.jpg" alt="">
-
-                  <img src="images/escolar-lateral.jpg" alt="">
-
-                  <img src="images/escolares.jpg" alt="">
-              </div>
+                <button onclick="openModal(0, 'escolar')">
+                    <img src="images/escolar-bus.jpg" alt="Escolar Bus" width="260px" height="260px">
+                </button>
+                <button onclick="openModal(1, 'escolar')">
+                    <img src="images/escolar-lateral.jpg" alt="Escolar Lateral" width="260px" height="260px">
+                </button>
+                <button onclick="openModal(2, 'escolar')">
+                    <img src="images/escolares.jpg" alt="Escolares" width="260px" height="260px">
+                </button>
+            </div>
               <hr>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <a id="frota" class="anchor"></a>
+    <a id="particular" class="anchor"></a>
     <section id="frota" class="cd-section">
       <div class="">
         <div class="frota">
@@ -159,13 +163,16 @@
             <div class="frota-images-content">
               <div class="middle">
                 <div class="grid-gallery">
-
-                    <img src="images/Executiva-aberta.jpg" alt="" width="260px" height="260px">
-
-                    <img src="images/Executiva-frente.jpg" alt="" width="260px" height="260px">
-
-                    <img src="images/Executiva-tras.jpg" alt="" width="260px" height="260px">
-                </div>
+                  <button onclick="openModal(0, 'executiva')">
+                      <img src="images/Executiva-aberta.jpg" alt="Executiva Aberta" width="260px" height="260px">
+                  </button>
+                  <button onclick="openModal(1, 'executiva')">
+                      <img src="images/Executiva-frente.jpg" alt="Executiva Frente" width="260px" height="260px">
+                  </button>
+                  <button onclick="openModal(2, 'executiva')">
+                      <img src="images/Executiva-tras.jpg" alt="Executiva Trás" width="260px" height="260px">
+                  </button>
+              </div>
                 <hr>
               </div>
             </div>
@@ -239,5 +246,12 @@
     this.reset();
   });
 </script>
+<script src="script.js"></script>
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
   </body>
 </html>
