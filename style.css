@@ -466,6 +466,8 @@ header.sticky a.phone-nav {
 
 .intro-bg {
   background-image: url(Banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Para cobrir toda a área */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -945,7 +947,7 @@ header.sticky a.phone-nav {
   }
 }
 
-.grid-gallery a {
+.grid-gallery img {
   max-width: 31.3333333%;
   width: 120px;
   display: inline-block;
@@ -1207,7 +1209,7 @@ header.sticky a.phone-nav {
 
 .contato-content select:-moz-placeholder {
   font-size: 14px;
-  color: #dfff29dfff29;
+  color: #dfff29;
   text-transform: uppercase;
 }
 
