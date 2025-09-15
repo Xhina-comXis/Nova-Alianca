@@ -233,7 +233,14 @@
         <p>(11) 2312-4693 | (11) 97148-6400</p>
       </div>
     </div>
-
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-navigation">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+</div>
 <script>
   const formTipo = document.getElementById('formTipo');
   const orcamentoCampos = document.querySelector('.orcamento-campos');
@@ -300,6 +307,6 @@
     this.reset();
   });
 </script>
-
+<script src="script.js"></script>
   </body>
 </html>
