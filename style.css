@@ -163,6 +163,48 @@ a {
   margin: -60px 0 0;
 }
 
+.input-estilizado {
+  float: left;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0;
+  padding: 0 0 0 20px;
+  line-height: 50px; /* Para centralizar o texto verticalmente */
+  color: #dfff29;
+  text-decoration: none;
+  background: none;
+  border: 2px solid #dfff29;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: 0;
+  -webkit-margin-start: none;
+  -webkit-margin-end: none;
+  transition: all 0.3s;
+}
+
+.input-estilizado:hover {
+  background: #dfff29;
+  color: #171971;
+}
+
+.input-estilizado:active {
+  transform: scale(0.98);
+}
+
+.contato-content input {
+  /* ... (código existente para inputs) ... */
+}
+
+.contato-content select {
+  /* ... (código existente para selects) ... */
+}
+
+.contato-content input[type="submit"] {
+  /* ... (código existente para o botão de submit) ... */
+}
+
 #status {
   width: 200px;
   height: 10px;
@@ -3025,4 +3067,20 @@ body {
 
 .prev:hover, .next:hover, .close:hover {
   color: lightgray;
+}
+
+.contato-content h2.trabalhe {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #dfff29;
+  text-transform: uppercase;
+}
+
+#formTipo {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
