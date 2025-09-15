@@ -179,79 +179,127 @@
           </div>
         </div>
     <div class="space">
-    </div>
-    <a id="contato" class="anchor"></a>
+    </div>    <a id="contato" class="anchor"></a>
     <section id="contato" class="cd-section">
       <div class="contato">
         <div class="contato-content">
           <div>
-            <h2>Solicite um Orçamento</h2>
-            <p>Preencha o formulário abaixo para fazer um orçamento:</p>
-            <form id="contatoform" name="dados" method="post">
+            <h2>Entre em Contato</h2>
+            <p>Selecione o tipo de envio:</p>
+
+            <select id="formTipo">
+              <option value="orcamento" selected>Orçamento</option>
+              <option value="curriculo">Currículo</option>
+            </select>
+
+            <form id="contatoform" enctype="multipart/form-data">
               <input type="text" name="nome" id="nome" placeholder="Nome" required>
-              <input type="email" name="email" id="email" placeholder="E-mail" required>
-              <input type="text" name="telefone" id="telefone" placeholder="Telefone para Contato" required>
-              <select name="uso" id="uso" required>
-                <option value="" disabled selected>Tipo de Serviço</option>
-                <option value="Fretamento de Funcionários">Fretamento de Funcionários</option>
-                <option value="Transporte Escolar">Transporte Escolar</option>
-                <option value="Transporte Executivo">Transporte Executivo</option>
-                <option value="Turismo">Turismo</option>
-                <option value="Outro">Outro</option>
-              </select>
-              <input type="submit" name="enviar" value="Enviar >">
+
+              <div class="orcamento-campos">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone para Contato">
+                <select name="uso" id="uso">
+                  <option value="" disabled selected>Tipo de Serviço</option>
+                  <option value="Fretamento de Funcionários">Fretamento de Funcionários</option>
+                  <option value="Transporte Escolar">Transporte Escolar</option>
+                  <option value="Transporte Executivo">Transporte Executivo</option>
+                  <option value="Turismo">Turismo</option>
+                  <option value="Outro">Outro</option>
+                </select>
+              </div>
+
+              <div class="curriculo-campos" style="display:none;">
+                <label for="curriculo" id="label-curriculo" class="input-estilizado">Currículo</label>
+                <input type="file" name="curriculo" id="curriculo" accept="application/pdf" style="display:none;">
+              </div>
+
+              <input type="submit" value="Enviar >">
             </form>
           </div>
         </div>
+
         <div class="contato-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.1196593204063!2d-46.1856716312971!3d-23.67167843553623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cde06c07a9c7d3%3A0xb2a9d1f9a4f80b08!2sRua%20S%C3%A3o%20Benedito%2C%2053%20-%20Taia%C3%A7upeba%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008765-080!5e0!3m2!1spt-BR!2sbr!4v1723131323425!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
         <div class="clr"></div>
       </div>
     </section>
+
     <div class="footer">
       <div class="footer-content">
         <h2>Nova Aliança Transportes e locações</h2>
         <p>Rua São Benedito, 53 <br> Taiaçupeba, Mogi das Cruzes - SP <br> CEP 08765-080 <br> 13.273.116/0001-46 </p>
         <p>novaaliancamogi@gmail.com</p>
         <p>(11) 2312-4693 | (11) 97148-6400</p>
-        </a>
       </div>
     </div>
+
 <script>
+  const formTipo = document.getElementById('formTipo');
+  const orcamentoCampos = document.querySelector('.orcamento-campos');
+  const curriculoCampos = document.querySelector('.curriculo-campos');
+
+  // Alterna campos visíveis
+  formTipo.addEventListener('change', () => {
+    if (formTipo.value === 'orcamento') {
+      orcamentoCampos.style.display = 'block';
+      curriculoCampos.style.display = 'none';
+    } else {
+      orcamentoCampos.style.display = 'none';
+      curriculoCampos.style.display = 'block';
+    }
+  });
+
+  // Atualiza o texto do "botão" de currículo quando um arquivo é selecionado
+  const inputCurriculo = document.getElementById('curriculo');
+  const labelCurriculo = document.getElementById('label-curriculo');
+
+  inputCurriculo.addEventListener('change', () => {
+    if (inputCurriculo.files.length > 0) {
+      labelCurriculo.textContent = inputCurriculo.files[0].name;
+    } else {
+      labelCurriculo.textContent = 'Currículo';
+    }
+  });
+
+  // Envio do formulário
   document.getElementById('contatoform').addEventListener('submit', function(event) {
     event.preventDefault();
-
     const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const telefone = document.getElementById('telefone').value;
-    const uso = document.getElementById('uso').value;
 
-    const templateParams = {
-      nome: nome,
-      email: email,
-      telefone: telefone,
-      uso: uso
-    };
+    if (formTipo.value === 'orcamento') {
+      const email = document.getElementById('email').value;
+      const telefone = document.getElementById('telefone').value;
+      const uso = document.getElementById('uso').value;
 
-    emailjs.send('service_npn5ctq', 'template_qu9ycra', templateParams)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Suas informações foram enviadas e em breve faremos contato!');
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert('Um erro ocorreu, tente novamente mais tarde.');
-      });
+      const templateParams = { nome, email, telefone, uso };
+      emailjs.send('service_npn5ctq', 'template_qu9ycra', templateParams)
+        .then(() => alert('Orçamento enviado com sucesso!'))
+        .catch(() => alert('Erro ao enviar orçamento.'));
+    } else {
+      const fileInput = document.getElementById('curriculo').files[0];
+      if (!fileInput) {
+        alert('Selecione um arquivo PDF.');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const base64File = e.target.result.split(',')[1];
+        const templateParams = {
+          nome: nome,
+          arquivo: base64File,
+          filename: fileInput.name
+        };
+        emailjs.send('service_npn5ctq', 'template_curriculo', templateParams)
+          .then(() => alert('Currículo enviado com sucesso!'))
+          .catch(() => alert('Erro ao enviar currículo.'));
+      };
+      reader.readAsDataURL(fileInput);
+    }
 
     this.reset();
   });
 </script>
-<script src="script.js"></script>
-<div id="imageModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage">
-  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-  <a class="next" onclick="changeImage(1)">&#10095;</a>
-</div>
+
   </body>
 </html>
