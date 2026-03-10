@@ -1,312 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="Logo.ico">
-    <link rel="stylesheet" href="style.css">
-    <title>Nova Aliança Transportes</title>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-      emailjs.init("UOf9rOEydetMaUjdA");
-    </script>
-  </head>
-  <body class="home blog">
-    <a id="topo"></a>
-    <header>
-      <div class="top">
-        <div class="top-content">
-          <a href="#frota">Turismo</a>
-          <a href="#escolar">Escolar</a>
-          <a href="#particular">Particular</a>
-          <a href="tel:+551123124693">(11) 2312-4693</a>
-          <a href="tel:+5511971486400">(11) 97148-6400</a>
-          <div class="clr"></div>
-        </div>
-      </div>
-      <div class="header">
-        <div class="header-content">
-          <div class="logo">
-            <a href="#topo"></a>
-          </div>
-          <a class="phone-nav" href="tel:+551123124693"></a>
-          <div class="nav-menu">
-            <ul class="clearfix">
-              <li>
-                <a href="#topo">Início</a>
-              </li>
-              <li>
-                <a href="#frota">Frota</a>
-              </li>
-              <li>
-                <a href="#contato">Contato</a>
-              </li>
-            </ul>
-          </div>
-          <div class="clr"></div>
-        </div>
-      </div>
-    </header>
-    <div class="overlay overlay-hugeinc">
-      <button type="button" class="overlay-close"></button>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#topo">Início</a>
-            </li>
-            <li>
-              <a href="#sobre">Sobre a Empresa</a>
-            </li>
-            <li>
-              <a href="#frota">Nossa Frota</a>
-            </li>
-            <li>
-              <a href="#contato">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="intro-bg"></div>
-    <div class="hero">
-      <div class="hero-content">
-        <div>
-          <h2>Onde o transporte é um compromisso com a qualidade.</h2>
-          <hr>
-          <p>A Nova Aliança representa a solução ideal para aqueles que buscam uma combinação imbatível de segurança, atendimento de qualidade e compromisso com a pontualidade.</p>
-          <a href="#contato" class="more-about">Consulta</a>
-        </div>
-        <div class="clr"></div>
-      </div>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção do Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
 
-    <a id="frota" class="anchor"></a>
-    <section id="frota" class="cd-section">
-      <div class="">
-        <div class="frota">
-          <div class="frota-info">
-            <div class="frota-info-content">
-              <div>
-                <h1>Transporte Turismo</h1>
-                <p>A Nova Aliança Transportes é especialista em fretamento para turismo, oferecendo veículos exclusivos e confortáveis. Comprometida com altos padrões de qualidade e atenção aos detalhes, nossa missão é tornar cada viagem uma experiência memorável e sem preocupações. Escolha a Nova Aliança Transportes para uma jornada agradável e relaxante.</p>
-              </div>
-            </div>
-          </div>
-          <img class="frota-foto" src="images/Executiva-fechada.png" alt="" width="420px" height="600px">
-          <div class="frota-images">
-            <div class="frota-images-content">
-              <div class="middle">
-                <div class="grid-gallery">
-                  <button onclick="openModal(0, 'executiva')">
-                      <img src="images/Executiva-aberta.jpg" alt="Executiva Aberta" width="260px" height="260px">
-                  </button>
-                  <button onclick="openModal(1, 'executiva')">
-                      <img src="images/Executiva-frente.jpg" alt="Executiva Frente" width="260px" height="260px">
-                  </button>
-                  <button onclick="openModal(2, 'executiva')">
-                      <img src="images/Executiva-tras.jpg" alt="Executiva Trás" width="260px" height="260px">
-                  </button>
-              </div>
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-     <a id="escolar" class="anchor"></a>
-      <div class="frota inverse">
-        <div class="frota-info">
-          <div class="frota-info-content">
-            <div>
-              <h1>Transporte Escolar</h1>
-              <p>A Nova Aliança Transportes oferece transporte escolar em várias cidades do estado de São Paulo. Nossa frota conta com veículos equipados com cintos de segurança individuais e é operada por motoristas e monitores treinados para garantir a supervisão e o cuidado das crianças.</p>
-            </div>
-          </div>
-        </div>
-        <img class="frota-foto" src="images/escolar-3.4.jpg" alt="">
-        <div class="frota-images">
-          <div class="frota-images-content">
-            <div class="middle">
-              <div class="grid-gallery">
-                <button onclick="openModal(0, 'escolar')">
-                    <img src="images/escolar-bus.jpg" alt="Escolar Bus" width="260px" height="260px">
-                </button>
-                <button onclick="openModal(1, 'escolar')">
-                    <img src="images/escolar-lateral.jpg" alt="Escolar Lateral" width="260px" height="260px">
-                </button>
-                <button onclick="openModal(2, 'escolar')">
-                    <img src="images/escolares.jpg" alt="Escolares" width="260px" height="260px">
-                </button>
-            </div>
-              <hr>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <a id="particular" class="anchor"></a>
-    <section id="frota" class="cd-section">
-      <div class="">
-        <div class="frota">
-          <div class="frota-info">
-            <div class="frota-info-content">
-              <div>
-                <h1>Transporte Executivo</h1>
-                <p>
-                  A Nova Aliança Transportes é especialista em fretamento executivo, oferecendo frotas exclusivas para garantir conforto e segurança em suas viagens. Confie em nossa expertise para uma experiência de transporte sem preocupações.</p>
-              </div>
-            </div>
-          </div>
-          <img class="frota-foto" src="images/Executiva-fechada.png" alt="" width="420px" height="600px">
-          <div class="frota-images">
-            <div class="frota-images-content">
-              <div class="middle">
-                <div class="grid-gallery">
-                  <button onclick="openModal(0, 'executiva')">
-                      <img src="images/Executiva-aberta.jpg" alt="Executiva Aberta" width="260px" height="260px">
-                  </button>
-                  <button onclick="openModal(1, 'executiva')">
-                      <img src="images/Executiva-frente.jpg" alt="Executiva Frente" width="260px" height="260px">
-                  </button>
-                  <button onclick="openModal(2, 'executiva')">
-                      <img src="images/Executiva-tras.jpg" alt="Executiva Trás" width="260px" height="260px">
-                  </button>
-              </div>
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-    <div class="space">
-    </div>    <a id="contato" class="anchor"></a>
-    <section id="contato" class="cd-section">
-      <div class="contato">
-        <div class="contato-content">
-          <div>
-            <h2>Entre em Contato</h2>
-            <p>Selecione o tipo de envio:</p>
+        .box {
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
 
-            <select id="formTipo">
-              <option value="orcamento" selected>Orçamento</option>
-              <option value="curriculo">Currículo</option>
-            </select>
+        .price {
+            font-size: 32px;
+            color: #4CAF50;
+            margin: 20px 0;
+            font-weight: bold;
+        }
 
-            <form id="contatoform" enctype="multipart/form-data">
-              <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
 
-              <div class="orcamento-campos">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="text" name="telefone" id="telefone" placeholder="Telefone para Contato">
-                <select name="uso" id="uso">
-                  <option value="" disabled selected>Tipo de Serviço</option>
-                  <option value="Fretamento de Funcionários">Fretamento de Funcionários</option>
-                  <option value="Transporte Escolar">Transporte Escolar</option>
-                  <option value="Transporte Executivo">Transporte Executivo</option>
-                  <option value="Turismo">Turismo</option>
-                  <option value="Outro">Outro</option>
-                </select>
-              </div>
+<div class="box">
+    <h1>Site Temporariamente Indisponível</h1>
 
-              <div class="curriculo-campos" style="display:none;">
-                <label for="curriculo" id="label-curriculo" class="input-estilizado">Currículo</label>
-                <input type="file" name="curriculo" id="curriculo" accept="application/pdf" style="display:none;">
-              </div>
+    <p>Para manter este site online, é necessário pagar o servidor de hospedagem.</p>
 
-              <input type="submit" value="Enviar >">
-            </form>
-          </div>
-        </div>
+    <p>Contribuição necessária para renovar o servidor:</p>
 
-        <div class="contato-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.1196593204063!2d-46.1856716312971!3d-23.67167843553623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cde06c07a9c7d3%3A0xb2a9d1f9a4f80b08!2sRua%20S%C3%A3o%20Benedito%2C%2053%20-%20Taia%C3%A7upeba%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008765-080!5e0!3m2!1spt-BR!2sbr!4v1723131323425!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-        </div>
-        <div class="clr"></div>
-      </div>
-    </section>
+    <div class="price">$45 USD</div>
 
-    <div class="footer">
-      <div class="footer-content">
-        <h2>Nova Aliança Transportes e locações</h2>
-        <p>Rua São Benedito, 53 <br> Taiaçupeba, Mogi das Cruzes - SP <br> CEP 08765-080 <br> 13.273.116/0001-46 </p>
-        <p>novaaliancamogi@gmail.com</p>
-        <p>(11) 2312-4693 | (11) 97148-6400</p>
-      </div>
-    </div>
-<div id="imageModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage">
-  <div class="modal-navigation">
-    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
-    <a class="next" onclick="changeImage(1)">&#10095;</a>
-  </div>
+    <p>Após o pagamento, o site será restaurado normalmente.</p>
+
+    <a href="#">Realizar Pagamento</a>
 </div>
-<script>
-  const formTipo = document.getElementById('formTipo');
-  const orcamentoCampos = document.querySelector('.orcamento-campos');
-  const curriculoCampos = document.querySelector('.curriculo-campos');
 
-  // Alterna campos visíveis
-  formTipo.addEventListener('change', () => {
-    if (formTipo.value === 'orcamento') {
-      orcamentoCampos.style.display = 'block';
-      curriculoCampos.style.display = 'none';
-    } else {
-      orcamentoCampos.style.display = 'none';
-      curriculoCampos.style.display = 'block';
-    }
-  });
-
-  // Atualiza o texto do "botão" de currículo quando um arquivo é selecionado
-  const inputCurriculo = document.getElementById('curriculo');
-  const labelCurriculo = document.getElementById('label-curriculo');
-
-  inputCurriculo.addEventListener('change', () => {
-    if (inputCurriculo.files.length > 0) {
-      labelCurriculo.textContent = inputCurriculo.files[0].name;
-    } else {
-      labelCurriculo.textContent = 'Currículo';
-    }
-  });
-
-  // Envio do formulário
-  document.getElementById('contatoform').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const nome = document.getElementById('nome').value;
-
-    if (formTipo.value === 'orcamento') {
-      const email = document.getElementById('email').value;
-      const telefone = document.getElementById('telefone').value;
-      const uso = document.getElementById('uso').value;
-
-      const templateParams = { nome, email, telefone, uso };
-      emailjs.send('service_npn5ctq', 'template_qu9ycra', templateParams)
-        .then(() => alert('Orçamento enviado com sucesso!'))
-        .catch(() => alert('Erro ao enviar orçamento.'));
-    } else {
-      const fileInput = document.getElementById('curriculo').files[0];
-      if (!fileInput) {
-        alert('Selecione um arquivo PDF.');
-        return;
-      }
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const base64File = e.target.result.split(',')[1];
-        const templateParams = {
-          nome: nome,
-          arquivo: base64File,
-          filename: fileInput.name
-        };
-        emailjs.send('service_npn5ctq', 'template_curriculo', templateParams)
-          .then(() => alert('Currículo enviado com sucesso!'))
-          .catch(() => alert('Erro ao enviar currículo, por favor o envie no nosso email "novaaliancamogi@gmail.com"'));
-      };
-      reader.readAsDataURL(fileInput);
-    }
-
-    this.reset();
-  });
-</script>
-<script src="script.js"></script>
-  </body>
+</body>
 </html>
