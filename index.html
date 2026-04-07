@@ -280,7 +280,7 @@
       const uso = document.getElementById('uso').value;
 
       const templateParams = { nome, email, telefone, uso };
-      emailjs.send('service_npn5ctq', 'template_qu9ycra', templateParams)
+      emailjs.send('service_hg44du9', 'template_qu9ycra', templateParams)
         .then(() => alert('Orçamento enviado com sucesso!'))
         .catch(() => alert('Erro ao enviar orçamento.'));
     } else {
@@ -297,7 +297,7 @@
           arquivo: base64File,
           filename: fileInput.name
         };
-        emailjs.send('service_npn5ctq', 'template_curriculo', templateParams)
+        emailjs.send('service_hg44du9', 'template_curriculo', templateParams)
           .then(() => alert('Currículo enviado com sucesso!'))
           .catch(() => alert('Erro ao enviar currículo, por favor o envie no nosso email "novaaliancamogi@gmail.com"'));
       };
